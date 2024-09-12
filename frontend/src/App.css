@@ -1,0 +1,137 @@
+:root {
+    --primary-color: #6a98e0;
+    --secondary-color: #f39c12;
+    --background-color: #1e2a38;
+    --surface-color: #2c3e50;
+    --text-color: #ecf0f1;
+    --error-color: #e74c3c;
+    --success-color: #2ecc71;
+    --box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    --border-radius: 12px;
+    --transition: all 0.3s ease;
+  }
+  
+  body, html {
+    font-family: 'Inter', sans-serif;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    background-color: var(--background-color);
+    color: var(--text-color);
+  }
+  
+  .myBackground {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    box-sizing: border-box;
+    background: linear-gradient(135deg, #2c3e50 0%, #1e2a38 100%);
+  }
+  
+  .whiteBox {
+    background-color: var(--surface-color);
+    padding: 40px;
+    padding-bottom: 5px;
+    padding-top: 30px;
+    width: 100%;
+    max-width: 420px;
+    border-radius: var(--border-radius);
+    box-shadow: var(--box-shadow);
+    transition: var(--transition);
+  }
+  
+  .whiteBox:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.3);
+  }
+  
+  .title {
+    font-size: 28px;
+    color: var(--primary-color);
+    margin-bottom: 30px;
+    text-align: center;
+    font-weight: 600;
+  }
+  
+  .itemBox {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 25px;
+  }
+  
+  .myForm, .myButton {
+    width: 100%;
+  }
+  
+  .myButton {
+    background: var(--primary-color) !important;
+    color: var(--text-color) !important;
+    padding: 12px 0 !important;
+    font-size: 16px !important;
+    text-transform: uppercase !important;
+    letter-spacing: 1px !important;
+    border-radius: var(--border-radius) !important;
+    transition: var(--transition) !important;
+    border: 2px solid var(--primary-color) !important;
+  }
+  
+  .myButton:hover {
+    background: transparent !important;
+    color: var(--primary-color) !important;
+    box-shadow: 0 5px 15px rgba(106, 152, 224, 0.4);
+  }
+  
+  a {
+    color: var(--primary-color);
+    text-decoration: none;
+    transition: var(--transition);
+  }
+  
+  a:hover {
+    color: var(--secondary-color);
+    text-decoration: underline;
+  }
+  
+  @media (max-width: 480px) {
+    .whiteBox {
+      padding: 30px;
+    }
+    .title {
+      font-size: 24px;
+    }
+  }
+  
+  .MuiTextField-root {
+    margin-bottom: 20px !important;
+  }
+  
+  .MuiInputBase-root {
+    border-radius: var(--border-radius) !important;
+    color: var(--text-color) !important;
+    background-color: rgba(255, 255, 255, 0.05) !important;
+  }
+  
+  .MuiOutlinedInput-root.Mui-focused .MuiOutlinedInput-notchedOutline {
+    border-color: var(--primary-color) !important;
+  }
+  
+  .MuiInputLabel-root {
+    color: var(--text-color) !important;
+  }
+  
+  .MuiInputLabel-root.Mui-focused {
+    color: var(--primary-color) !important;
+  }
+  
+  .message {
+    background-color: rgba(231, 76, 60, 0.2);
+    color: #e74c3c;
+    padding: 12px;
+    border-radius: var(--border-radius);
+    margin-bottom: 20px;
+    text-align: center;
+    font-weight: 500;
+    border: 1px solid #e74c3c;
+  }
